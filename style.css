@@ -1,0 +1,696 @@
+@font-face {
+    font-family: 'Antonio';
+    src: url(assets/Fonts/antonio.woff2);
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url(assets/Fonts/league-spartan-v11-latin-700.woff2);
+}
+
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url(assets/Fonts/league-spartan-v11-latin-regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    background: 0;
+    border: 0;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+
+    background-image: url("assets/images/background-stars\ \(1\).svg");
+    background-color: #070724;
+}
+
+
+
+/*header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem;
+    height: 68px;
+}
+
+header h1 {
+    font-family: 'Antonio';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: -1.05px;
+    color: #fff;
+    width: 10.5812rem;
+    height: 3.6rem;
+    margin: 16px 0;
+
+}
+
+
+.topMobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#burger-btn.active {
+    opacity: 0.5;
+}
+
+#planet-btn {
+    display: none;
+
+}
+
+#planet-btn.active {
+    margin-top: 70px;
+    padding: 3rem;
+    position: absolute;
+    display: block;
+    height: 919px;
+    width: 100vw;
+    z-index: 1;
+    flex-direction: column;
+    background-color: #070724;
+}
+
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 23px;
+    background-color: rgb(65, 158, 187);
+}
+
+
+.MSline {
+    background-color: #fff;
+    opacity: .2;
+
+}
+
+.flips {
+    margin: 2rem 0;
+
+}
+
+
+.planet {
+    color: #fff;
+    font-family: League Spartan, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+}
+
+
+
+
+.upline-pl {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+
+}
+
+
+/* main */
+.wall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.line {
+    width: 100vw;
+    background-color: #fff;
+    opacity: .2;
+}
+
+.lineunder {
+    display: none;
+    width: 100%;
+}
+
+.allover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    flex-wrap: wrap;
+    margin-top: 1.4rem;
+}
+
+.allover button {
+    cursor: pointer;
+}
+
+
+.allover h1 {
+
+    margin-top: 20px;
+    font-family: League Spartan;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    opacity: .5;
+    margin-bottom: 2.4rem;
+}
+
+
+#internal {
+    margin: 0 5rem;
+}
+
+.allover .numbers {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.whole {
+
+    position: relative;
+}
+
+.whole:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(65, 158, 187);
+    height: 4px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.whole:hover:after {
+    width: 100%;
+}
+
+
+.planet-ph {
+    margin: 50px 10px 10px 10px;
+    position: relative;
+    width: 30.1rem;
+    height: 30.5rem;
+}
+
+.planet-ph img {
+    width: 11.1rem;
+    height: 11.1rem;
+    margin: 9.5rem;
+
+
+}
+
+#planet-imgadd {
+    position: absolute;
+    width: 8rem;
+    height: 9rem;
+    top: 6rem;
+    left: 1.5rem;
+}
+
+
+.planet-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planet-info h1 {
+    font-family: Antonio;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.planet-info p {
+
+    margin: 16px 24px 32px;
+    text-align: center;
+    font-family: League Spartan;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.only-info i {
+    color: #fff;
+    opacity: .5;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.planet-info a {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.9;
+    font-family: League Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.infos-num {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30.8rem;
+    padding: 2.8rem 2.4rem 4.8rem 2.4rem;
+    gap: 0.8rem;
+
+}
+
+.box-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border: 1px solid #ffffff;
+    color: #fff;
+
+}
+
+.box-num p {
+    opacity: .5;
+    font-family: League Spartan;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 24px;
+    letter-spacing: .727273px;
+}
+
+.box-num i {
+    font-family: Antonio;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -.75px;
+    margin-right: 24px;
+}
+
+
+
+/* tablets and up */
+@media all and (min-width:767px) {
+    header {
+        flex-direction: column;
+        height: 141px;
+        justify-content: space-around;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+    }
+
+    header h1 {
+        font-family: 'Antonio';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: -1.05px;
+        color: #fff;
+        width: 10.5812rem;
+        height: 3.6rem;
+    }
+
+
+    .topMobile {
+        justify-content: center;
+
+    }
+
+    #planet-btn {
+        display: block;
+
+    }
+
+    .MSline {
+        display: none;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    #burger-btn {
+        display: none;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    nav .planets-list {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 49.6296rem;
+
+    }
+
+    nav .planets-list h2 {
+        margin-bottom: 20px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: League Spartan, sans-serif;
+    }
+
+    .lineunder {
+        display: block;
+    }
+
+    .main-info {
+        width: 75%;
+        margin-right: 10rem;
+    }
+
+    .only-info {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10rem;
+    }
+
+
+    .planet-info P {
+        margin: 0;
+        text-align: left;
+    }
+
+    .planet-info {
+        align-items: flex-start;
+        width: 100%;
+        height: 20rem;
+    }
+    .planet-ph img {
+        width: 27rem;
+        height: 27rem;
+        margin: 9.5rem 0;
+    }
+
+    #planet-imgadd {
+        width: 13.5rem;
+        height: 20rem;
+        top: 15rem;
+        left: 6.5rem;
+    }
+
+    .allover-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 32.1rem;
+        height: 9.2rem;
+    }
+
+    .allover {
+        gap: 2.4rem;
+    }
+
+    .allover li button {
+        width: 281px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .allover h1 {
+        opacity: 1;
+        text-align: left;
+        font-family: League Spartan;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 25px;
+        z-index: 2;
+    }
+
+    .allover .numbers {
+        display: block;
+        color: #fff;
+        opacity: .5;
+        font-family: League Spartan;
+        font-style: normal;
+        font-weight: 700;
+        margin-right: 17px;
+        margin-left: 20px;
+        letter-spacing: 1.92857px;
+        line-height: 25px;
+        font-size: 12px;
+        z-index: 2;
+    }
+
+    .whole:after {
+        content: "";
+        position: absolute;
+        background-color: rgb(65, 158, 187);
+        height: 100%;
+        width: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .line2 {
+        display: none;
+    }
+
+    .line1 {
+        width: 100%;
+    }
+
+
+    .infos-num {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 95.9px;
+        justify-content: center;
+        gap: 22px;
+        padding-left: 5rem;
+    }
+
+    .box-num {
+        display: flex;
+        flex-direction: column;
+        width: 162px;
+        height: 8.6rem;
+        border: 1px solid rgba(255, 255, 255, .2);
+        justify-content: center;
+        align-items: normal;
+
+    }
+
+    .box-num P {
+        margin-left: 1.5rem;
+
+    }
+
+    .box-num i {
+        font-size: 25px;
+        letter-spacing: -.75px;
+        margin-left: 15px;
+    }
+
+}
+
+
+
+/* laptops big monitors and up */
+@media all and (min-width:1439px) {
+    header {
+        flex-direction: row;
+        height: 93px;
+        align-items: normal;
+        margin: 0 4.1rem 0 3.1rem;
+    }
+
+    header h1 {
+        margin-top: 3.2rem;
+    }
+
+    .topMobile {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .planet {
+        margin-top: 0;
+        position: relative;
+    }
+
+    .planet:after {
+        content: "";
+        position: absolute;
+        background-color: rgb(65, 158, 187);
+        height: 4px;
+        width: 0;
+        left: 0;
+        top: -40px;
+    }
+
+    .planet:hover:after {
+        width: 100%;
+    }
+
+
+    .flips {
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        height: 73px;
+    }
+
+    .planets-list {
+        margin-bottom: 20px;
+    }
+
+    #planet-btn {
+        width: 51.2rem;
+    }
+
+    .main-info {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 15rem;
+        margin-right: 5rem;
+    }
+
+    .planet-ph {
+        margin: 5.5rem;
+    }
+
+    .planet-ph img {
+        width: 29rem;
+        height: 29rem;
+        margin-top: 13rem;
+    }
+
+    #planet-imgadd {
+        width: 16.5rem;
+        height: 20rem;
+    }
+
+    .only-info {
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: flex-start;
+        height: 580px;
+        margin-left: 20rem;
+    }
+
+    .only-info .planet-info {
+        height: 273px;
+    }
+
+    .only-info .planet-info h1 {
+        font-size: 80px;
+    }
+
+    .only-info .planet-info p {
+        text-align: left;
+        width: 350px;
+        font-size: 14px;
+        color: #ffffff80;
+    }
+
+    .allover {
+        justify-content: flex-start;
+    }
+
+    #internal {
+        margin-left: 0;
+    }
+
+    .allover li button {
+        width: 350px;
+        margin-left: 0;
+        margin-right: 0;
+        cursor: pointer;
+    }
+
+    .box-num {
+        width: 253px;
+        height: 128px;
+        margin-bottom: 5rem;
+    }
+
+    .box-num i {
+        font-size: 40px;
+    }
+
+    .infos-num {
+        margin-top: 55px;
+        padding: 28px 24px 48px 24px;
+        width: 1124px;
+    }
+}
